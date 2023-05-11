@@ -40,12 +40,12 @@ export default function Header() {
                                     </svg>
                                 </label>
                             </div>
-                            <div className="flex justify-cemter pt-1 p-0 m-0 w-2/12">
+                            <div className="flex justify-cemter md:pt-1 p-0 m-0 w-2/12">
                                 <p className="h-[39px] mx-auto rounded-[80px] flex items-center justify-center text-center">
-                                    <img src='logo.png' className="w-[40px] h-[40px] ml-2 mt-2" />
+                                    <img src='logo.png' className="w-[40px] h-[40px] ml-2 md:mt-2" />
                                 </p>
                             </div>
-                            <div className="flex justify-center items-center pt-1 p-0 m-0 w-5/12">
+                            <div className="flex justify-center items-center md:pt-1 p-0 m-0 w-5/12">
                                 <label htmlFor="toggleContactModal" className="h-[25px] text-center inline-block px-4 py-1 leading-none border rounded-xl border-[#44475A] text-white text-[13px] bg-[#282a36] cursor-pointer">Contact</label>
                                 <input type="checkbox" name="toggleContactModal" id="toggleContactModal" checked={isOpenContact} onChange={toggleMenuContact}  className="hidden"/>
                             </div>

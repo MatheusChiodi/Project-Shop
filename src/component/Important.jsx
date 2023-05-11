@@ -1,14 +1,18 @@
 export default function Important() {
     return (
         <>
-            <div className="w-full px-[76px] mt-[20px] bg-FindHere h-[40px] flex justify-center items-center">
-                <p className="text-[#f8f8f2] text-[20px] font-bold">
-                    Which one is closest to you?
+            <div className="w-full px-[76px] bg-[#f8f8f2] h-[300px] mt-[20px]">
+                <p className="text-[30px] font-bold w-full text-center">
+                    Important
                 </p>
-                <a href="#" className="text-[#f8f8f2] text-[15px] bg-[#ff5555] px-3 ms-3 rounded-md ">
-                    <span className="font-bold">Find</span> here
-                </a>
-                
+                <div className="grid grid-cols-2 w-full m-0 p-0">
+                    <div className="bg-red h-[250px] me-2 rounded-[20px]">
+
+                    </div>
+                    <div className="bg-red h-[250px] ms-2 rounded-[20px]">
+
+                    </div>
+                </div>
             </div>
         </>
     )
