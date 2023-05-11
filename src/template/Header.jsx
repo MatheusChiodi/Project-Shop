@@ -58,15 +58,18 @@ export default function Header() {
                             <img src='logo.png' className="w-[40px] h-[40px]"/>
                         </div>
                         <div className="md:w-[85%] w-full text-center md:text-left md:mb-0 mb-2">
-                            <a href="#ContainerServices" className="text-md block mt-1 md:mt-0 md:inline-block text-[#f8f8f2] hover:text-[#ff5555] font-medium md:mr-4 mr-0 ms-[5%] transition-all">
-                                Services
+                            <a href="#ContainerDepartments" className="text-md block mt-1 md:mt-0 md:inline-block text-[#f8f8f2] hover:text-[#ff5555] font-normal md:mr-4 mr-0 ms-[5%] transition-all">
+                                Departments
                             </a>
-                            <a href="#ContainerTreatment" className="text-md block mt-1 md:mt-0 md:inline-block text-[#f8f8f2] hover:text-[#ff5555] font-medium md:mr-4 mr-0 mb-0 ms-[3%] transition-all">
-                                Treatment
+                            <a href="#ContainerReleases" className="text-md block mt-1 md:mt-0 md:inline-block text-[#f8f8f2] hover:text-[#ff5555] font-normal md:mr-4 mr-0 mb-0 ms-[3%] transition-all">
+                                Releases
+                            </a>
+                            <a href="#ContainerOfferDay" className="text-md block mt-1 md:mt-0 md:inline-block text-[#f8f8f2] hover:text-[#ff5555] font-normal md:mr-4 mr-0 mb-0 ms-[3%] transition-all">
+                                Offer of the day
                             </a>
                         </div>
-                        <div className="px-2 w-[10%] text-center hidden md:block border-x-[2px] border-[#ff5555] pt-[7px] p-0 h-[40px] justify-center items-center">
-                            Portals
+                        <div className="px-2 w-[10%] text-center hidden md:block border-x-[2px] border-[#ff5555] pt-[7px] p-0 h-[40px] justify-center items-center font-normal">
+                            Types
                         </div>
                     </div>
                     ) : (null)}
@@ -76,5 +79,3 @@ export default function Header() {
 
     )
 }
-  
-  

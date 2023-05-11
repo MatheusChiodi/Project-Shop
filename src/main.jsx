@@ -6,7 +6,7 @@ import MoreSearch from './template/MoreSearch'
 import Slide from './component/Slide'
 import QuickAccess from './component/QuickAccess'
 import FindHere from './component/FindHere'
-import Important from './component/Important'
+import News from './component/Important'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -15,6 +15,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Slide />
     <QuickAccess />
     <FindHere />
-    <Important />
+    <News />
   </React.StrictMode>,
 )

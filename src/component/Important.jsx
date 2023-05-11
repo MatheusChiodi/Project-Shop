@@ -1,9 +1,9 @@
-export default function Important() {
+export default function News() {
     return (
         <>
             <div className="w-full md:px-[76px] px-3 bg-[#f8f8f2] h-[300px] mt-[20px]">
                 <p className="text-[30px] font-bold w-full text-center">
-                    Important
+                    News
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 w-full m-0 p-0">
                     <div className="bg-red h-[250px] md:me-2 me-0 rounded-[20px] mt-3">
