@@ -26,7 +26,7 @@ export default function Header() {
     }
 
     return (
-        <div className="m-0 p-0 fixed top-0 bg-[#282a36] mx-auto">
+        <div className="m-0 p-0 fixed top-0 bg-[#282a36] mx-auto" style={{ zIndex: 9999 }}>
             <header className="fixed top-0 w-full m-0 p-0 px-[40px] bg-[#282a36] text-[#f8f8f2]">
                 <nav className="flex items-center justify-between flex-wrap  md:px-6 px-2 md:border-none border-b border-b-[#44475A] rounded-b-[20px] max-w-[2000px]">
                     <div className="block md:hidden w-[100%]">
@@ -58,10 +58,10 @@ export default function Header() {
                             <img src='logo.png' className="w-[40px] h-[40px]"/>
                         </div>
                         <div className="md:w-[85%] w-full text-center md:text-left md:mb-0 mb-2">
-                            <a href="#ContainerServices" className="text-md block mt-1 md:mt-0 md:inline-block text-[#f8f8f2] font-medium md:mr-4 mr-0 linkMenu ms-[5%]">
+                            <a href="#ContainerServices" className="text-md block mt-1 md:mt-0 md:inline-block text-[#f8f8f2] hover:text-[#ff5555] font-medium md:mr-4 mr-0 ms-[5%] transition-all">
                                 Services
                             </a>
-                            <a href="#ContainerTreatment" className="text-md block mt-1 md:mt-0 md:inline-block text-[#f8f8f2] font-medium md:mr-4 mr-0 mb-0 linkMenu ms-[3%]">
+                            <a href="#ContainerTreatment" className="text-md block mt-1 md:mt-0 md:inline-block text-[#f8f8f2] hover:text-[#ff5555] font-medium md:mr-4 mr-0 mb-0 ms-[3%] transition-all">
                                 Treatment
                             </a>
                         </div>
@@ -73,6 +73,7 @@ export default function Header() {
                 </nav>
             </header>
         </div>
+
     )
 }
   

@@ -2,7 +2,6 @@
 
 * {
     margin: 0px;
-    font-family: 'Ubuntu';
     list-style: none;
     font-weight: normal;
 }
@@ -16,8 +15,7 @@ li {
 }
 
 body {
-    background: #F1F1F1;
-    font-family: 'Ubuntu';
+    background: #f8f8f2;
     font-weight: normal;
 }
 
@@ -34,6 +32,7 @@ body {
 .bg-cyan {background: #8be9fd !important;}
 .bg-white {background: #f8f8f2 !important;}
 .bg-black {background: #000000 !important;}
+.bg-FindHere {background-image: url('../../../FindHere.jpg') !important;}
 
 /* text colors -----------------------------------------------------------------------------------------------------*/
 .text-gray {color: #282a36 !important;}
@@ -47,6 +46,76 @@ body {
 .text-black {color: #000000 !important;}
 
 
+/* Effects -------------------------------------------------------------------------------------------------------------*/
 
+/* Button Header */
 
-
+.hamburger {
+    cursor: pointer;
+  }
+  
+  .hamburger input {
+    display: none;
+  }
+  
+  .hamburger svg {
+    /* The size of the SVG defines the overall size */
+    height: 3em;
+    /* Define the transition for transforming the SVG */
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .line {
+    fill: none;
+    stroke: #FF5555;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    /* Define the transition for transforming the Stroke */
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .line-top-bottom {
+    stroke-dasharray: 12 63;
+  }
+  
+  .hamburger input:checked + svg {
+    transform: rotate(-45deg);
+  }
+  
+  .hamburger input:checked + svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+  }
+  
+  /* link */
+  
+  .linkMenu {
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .linkMenu:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #f8f8f2;
+    height: 1px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .linkMenu:hover:before{
+    left: 0;
+    right: 0;
+    width: 100%;
+  }

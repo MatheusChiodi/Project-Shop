@@ -5,16 +5,16 @@ export default function MoreSearch() {
                 <p className="text-white">
                     More Search <i className="fas fa-arrow-right ms-3"></i>
                 </p>
-                <a href="#" className="text-white mx-3">
+                <a href="#" className="text-white mx-3 linkMenu">
                     Plans
                 </a>
-                <a href="#" className="text-white mx-3">
+                <a href="#" className="text-white mx-3 linkMenu">
                     Attendance
                 </a>
-                <a href="#" className="text-white mx-3">
+                <a href="#" className="text-white mx-3 linkMenu">
                    Dentists
                 </a>
-                <a href="#" className="text-white mx-3">
+                <a href="#" className="text-white mx-3 linkMenu">
                     Debts
                 </a>
             </div>
