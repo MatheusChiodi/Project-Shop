@@ -14,7 +14,7 @@ export default function Important() {
                     </div>
                 </div>
                 <div className="w-full m-0 p-0">
-                    <div className="bg-red h-[250px] me-2 rounded-[20px] mt-3">
+                    <div className="bg-red h-[250px] md:me-2 rounded-[20px] mt-3">
                     </div>
                 </div>
             </div>
