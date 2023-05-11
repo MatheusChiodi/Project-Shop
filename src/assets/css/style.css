@@ -1,0 +1,52 @@
+/* Base -------------------------------------------------------------------------------------------------------------*/
+
+* {
+    margin: 0px;
+    font-family: 'Ubuntu';
+    list-style: none;
+    font-weight: normal;
+}
+
+a,
+p,
+li {
+    text-decoration: none;
+    color: #373737;
+    font-weight: normal;
+}
+
+body {
+    background: #F1F1F1;
+    font-family: 'Ubuntu';
+    font-weight: normal;
+}
+
+
+/*Backgrouds -----------------------------------------------------------------------------------------------------*/
+
+// theme dracula
+.bg-gray {background: #282a36 !important;}
+.bg-red {background: #ff5555 !important;}
+.bg-green {background: #50fa7b !important;}
+.bg-yellow {background: #f1fa8c !important;}
+.bg-blue {background: #6272a4 !important;}
+.bg-purple {background: #bd93f9 !important;}
+.bg-cyan {background: #8be9fd !important;}
+.bg-white {background: #f8f8f2 !important;}
+.bg-black {background: #000000 !important;}
+
+/* text colors -----------------------------------------------------------------------------------------------------*/
+.text-gray {color: #282a36 !important;}
+.text-red {color: #ff5555 !important;}
+.text-green {color: #50fa7b !important;}
+.text-yellow {color: #f1fa8c !important;}
+.text-blue {color: #6272a4 !important;}
+.text-purple {color: #bd93f9 !important;}
+.text-cyan {color: #8be9fd !important;}
+.text-white {color: #f8f8f2 !important;}
+.text-black {color: #000000 !important;}
+
+
+
+
+
