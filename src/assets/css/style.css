@@ -32,7 +32,7 @@ body {
 .bg-cyan {background: #8be9fd !important;}
 .bg-white {background: #f8f8f2 !important;}
 .bg-black {background: #000000 !important;}
-.bg-FindHere {background-image: url('../../../FindHere.jpg') !important;}
+.bg-FindHere {background-image: url('../FindHere.jpg') !important;}
 
 /* text colors -----------------------------------------------------------------------------------------------------*/
 .text-gray {color: #282a36 !important;}
