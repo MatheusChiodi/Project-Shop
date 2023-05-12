@@ -27,7 +27,7 @@ export default function Header() {
 
     return (
         <div className="m-0 p-0 fixed top-0 bg-[#282a36] mx-auto" style={{ zIndex: 9999 }}>
-            <header className="fixed top-0 w-full m-0 p-0 px-[40px] bg-[#282a36] text-[#f8f8f2]">
+            <header className="fixed top-0 w-full m-0 p-0 px-[40px] bg-[#282a36] text-[#f8f8f2] max-w-[2000px]">
                 <nav className="flex items-center justify-between flex-wrap  md:px-6 px-2 md:border-none border-b border-b-[#44475A] rounded-b-[20px] max-w-[2000px]">
                     <div className="block md:hidden w-[100%]">
                         <div className="flex justify-between flex-row w-[100%] p-0 m-0">

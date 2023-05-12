@@ -17,7 +17,10 @@ li {
 body {
     background: #f8f8f2;
     font-weight: normal;
-}
+    max-width: 2000px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+} 
 
 
 /*Backgrouds -----------------------------------------------------------------------------------------------------*/
@@ -119,3 +122,36 @@ body {
     right: 0;
     width: 100%;
   }
+
+  /* slide */
+
+  .carousel-slide {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .carousel-slide.active {
+    opacity: 1;
+  }
+  
+  .carousel-button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #999;
+    margin: 0 0.5rem;
+    cursor: pointer;
+  }
+  
+  .carousel-dot.active {
+    background-color: #333;
+  }
+  

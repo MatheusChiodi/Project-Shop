@@ -1,7 +1,7 @@
 export default function FindHere() {
     return (
         <>
-            <div className="w-full md:px-[76px] mt-[20px] bg-FindHere h-[40px] flex justify-center items-center">
+            <div className="w-full md:px-[10%] mt-[20px] bg-FindHere h-[40px] flex justify-center items-center">
                 <p className="text-[#f8f8f2] lg:text-[20px] md:text-[17px] text-[15px] font-bold">
                     Which one is closest to you?
                 </p>
