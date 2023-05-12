@@ -51,6 +51,58 @@ body {
 
 /* Effects -------------------------------------------------------------------------------------------------------------*/
 
+.itens {
+  position: relative;
+}
+
+.itens::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.5s;
+  border-radius: 10px;
+}
+
+.itens:hover::before {
+  opacity: 1;
+}
+
+.itens:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.itens2 {
+  position: relative;
+}
+
+.itens2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.5s;
+  border-radius: 20px;
+}
+
+.itens2:hover::before {
+  opacity: 1;
+}
+
+.itens2:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
 /* Button Header */
 
 .hamburger {

@@ -9,7 +9,7 @@ export default function Slide() {
 
     return (
         <>  
-        <div className="mt-[40px] h-[350px]">
+        <div className="mt-0 md:mt-[40px] h-[350px]">
             <div className="w-full" style={{ display: currentPage === 1 ? 'block' : 'none' }}>
                 <img src="./slide1.jpeg" alt="" className='w-full h-[350px]'/>
             </div>
@@ -19,7 +19,7 @@ export default function Slide() {
             <div className="w-full" style={{ display: currentPage === 3 ? 'block' : 'none' }}>
                 <img src="./slide3.jpeg" alt="" className='w-full h-[350px]'/>
             </div>
-            <div className="mt-5 absolute top-[320px] flex justify-center text-center w-full">
+            <div className="md:mt-5 mt-[-30px] absolute top-[-300] md:top-[320px] flex justify-center text-center w-full">
                 <button
                 onClick={() => handlePageChange(1)}
                 disabled={currentPage === 1}

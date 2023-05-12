@@ -9,8 +9,8 @@ export default function App() {
                         </p>
                     </div>
                     <div className="flex lg:justify-end justify-center">
-                        <img src="./GooglePlay.png" alt="GooglePlay" className="w-[150px] h-[50px] object-contain me-[10px] lg:mt-0 mt-[10px]" />
-                        <img src="./AppStore.png" alt="GooglePlay" className="w-[150px] h-[50px] object-contain lg:mt-0 mt-[10px]" />
+                        <img src="./GooglePlay.png" alt="GooglePlay" className="itens w-[150px] h-[50px] object-contain me-[10px] lg:mt-0 mt-[10px]" />
+                        <img src="./AppStore.png" alt="GooglePlay" className="itens w-[150px] h-[50px] object-contain lg:mt-0 mt-[10px]" />
                     </div>
                 </div>
             </div>

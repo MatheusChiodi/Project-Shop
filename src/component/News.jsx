@@ -14,10 +14,10 @@ export default function News() {
                     News
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 w-full m-0 p-0">
-                    <div className="bg-red h-[250px] md:me-2 me-0 rounded-[20px] mt-3">
+                    <div className="bg-red h-[250px] md:me-2 me-0 rounded-[20px] mt-3 itens2">
                         <img src="./newsMouse.jpeg" alt="" className="w-full h-full object-cover rounded-[20px]" />
                     </div>
-                    <div className="bg-red h-[250px] md:ms-2 ms-0 rounded-[20px] mt-3">
+                    <div className="bg-red h-[250px] md:ms-2 ms-0 rounded-[20px] mt-3 itens2">
                         <img src="./newsKeyboard.jpeg" alt="" className="w-full h-full object-cover rounded-[20px]" />
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 export default function MoreSearch() {
     return (
         <>
-            <div className="w-full mt-[0px] px-[76px] bg-[#282a36e9] py-1 hidden md:flex absolute max-w-[2000px]">
+            <div className="w-full mt-[0px] px-[48px] bg-[#282a36e9] py-1 hidden md:flex absolute max-w-[2000px]">
                 <p className="text-white">
                     More Search <i className="fas fa-arrow-right ms-3"></i>
                 </p>

@@ -15,9 +15,6 @@ export default function Header() {
         setIsOpen(!isOpen);
     }
 
-    //vou verificar o button contact e ver se ele esta aberto ou fechado
-    //se ele estiver fechado eu vou abri-lo
-    //ao abrir ele mostra o componente Contact
 
     const [isOpenContact, setIsOpenContact] = useState(false);
 
@@ -25,10 +22,28 @@ export default function Header() {
         setIsOpenContact(!isOpenContact);
     }
 
+    // Departments
+    const [isOpenDepartments, setIsOpenDepartments] = useState(false);
+
+    const toggleDropdownDepartments = () => {
+        setIsOpenDepartments(!isOpenDepartments);
+        // o botao cor outra cor quando clicado
+        document.getElementById("dropdownDepartments").classList.toggle("text-[#ff5555]");
+    };
+
+    // Types
+    const [isOpenTypes, setIsOpenTypes] = useState(false);
+
+    const toggleDropdownTypes = () => {
+        setIsOpenTypes(!isOpenTypes);
+        // o botao cor outra cor quando clicado
+        document.getElementById("dropdownTypes").classList.toggle("text-[#ff5555]");
+    };
+
     return (
-        <div className="m-0 p-0 fixed top-0 bg-[#282a36] mx-auto" style={{ zIndex: 9999 }}>
-            <header className="fixed top-0 w-full m-0 p-0 px-[40px] bg-[#282a36] text-[#f8f8f2] max-w-[2000px]">
-                <nav className="flex items-center justify-between flex-wrap  md:px-6 px-2 md:border-none border-b border-b-[#44475A] rounded-b-[20px] max-w-[2000px]">
+        <div className="m-0 p-0 fixed top-0 bg-[#f8f8f200] mx-auto" style={{ zIndex: 9999 }}>
+            <header className="fixed top-0 w-full m-0 p-0 md:bg-[#282a36] bg-[#f8f8f200] text-[#f8f8f2] max-w-[2000px]">
+                <nav className="bg-[#282a36]  flex items-center justify-between flex-wrap  md:px-6 px-2 md:border-none border-b border-b-[#44475A] rounded-b-[20px] max-w-[2000px]">
                     <div className="block md:hidden w-[100%]">
                         <div className="flex justify-between flex-row w-[100%] p-0 m-0">
                             <div className="flex justify-center pt-1 p-0 m-0 w-5/12">
@@ -57,19 +72,64 @@ export default function Header() {
                         <div className="px-2 w-[60px] text-center hidden md:block border-r-[2px] border-[#ff5555] me-3">
                             <img src='logo.png' className="w-[40px] h-[40px]"/>
                         </div>
-                        <div className="md:w-[85%] w-full text-center md:text-left md:mb-0 mb-2">
-                            <a href="#ContainerDepartments" className="text-md block mt-1 md:mt-0 md:inline-block text-[#f8f8f2] hover:text-[#ff5555] font-normal md:mr-4 mr-0 ms-[5%] transition-all">
-                                Departments
-                            </a>
-                            <a href="#ContainerReleases" className="text-md block mt-1 md:mt-0 md:inline-block text-[#f8f8f2] hover:text-[#ff5555] font-normal md:mr-4 mr-0 mb-0 ms-[3%] transition-all">
-                                Releases
-                            </a>
-                            <a href="#ContainerOfferDay" className="text-md block mt-1 md:mt-0 md:inline-block text-[#f8f8f2] hover:text-[#ff5555] font-normal md:mr-4 mr-0 mb-0 ms-[3%] transition-all">
-                                Offer of the day
-                            </a>
+                        <div className="md:w-[85%] w-full text-center md:text-left md:mb-0 mb-2 flex flex-row justify-center md:justify-start">
+                            <div className="relative">
+                                <button
+                                    id="dropdownDepartments"
+                                    onClick={toggleDropdownDepartments}
+                                    className='hover:text-[#ff5555]'
+                                >
+                                    Departments
+                                </button> 
+                                {isOpenDepartments && (
+                                    <div className="absolute top-0 left-0 mt-6 p-1 text-[18px] text-center bg-[#282a36] rounded-b-lg w-[114px] border-t-0 border-2 border-[#ff5555]">
+                                        <ul>
+                                            <li className="text-[#f8f8f2] hover:text-[#ff5555] cursor-pointer">
+                                                Hardware
+                                            </li>
+                                            <li className="text-[#f8f8f2] mt-2 hover:text-[#ff5555] cursor-pointer">
+                                                Peripherals
+                                            </li>
+                                            <li className="text-[#f8f8f2] mt-2 hover:text-[#ff5555] cursor-pointer">
+                                                Games
+                                            </li>
+                                            <li className="text-[#f8f8f2] my-2 hover:text-[#ff5555] cursor-pointer">
+                                                Consoles
+                                            </li>
+                                        </ul>
+                                    </div>
+                                )}
+                            </div>
+                            <a href="#" className="ms-3 hover:text-[#ff5555] cursor-pointer">Releases</a>
+                            <a href="#" className="ms-3 hover:text-[#ff5555] cursor-pointer">Offer of the day</a>
                         </div>
-                        <div className="px-2 w-[10%] text-center hidden md:block border-x-[2px] border-[#ff5555] pt-[7px] p-0 h-[40px] justify-center items-center font-normal">
-                            Types
+                        <div className="px-2 text-center hidden md:block border-x-[2px] border-[#ff5555] pt-[4px] p-0 h-[40px] justify-center items-center font-normal">
+                            <div className="relative w-full">
+                                <button
+                                    id="dropdownTypes"
+                                    onClick={toggleDropdownTypes}
+                                >
+                                    Types
+                                </button> 
+                                {isOpenTypes && (
+                                    <div className="absolute top-0 left-[-11.5px] mt-6 bg-[#282a36] w-[73.80px] border-t-0 border-[2px] border-[#ff5555] rounded-b-lg">
+                                        <ul>
+                                            <li className="text-[#f8f8f2] hover:text-[#ff5555] cursor-pointer mt-3">
+                                                <i className="fas fa-mouse text-[30px]"></i>
+                                            </li>
+                                            <li className="text-[#f8f8f2] mt-2 hover:text-[#ff5555] cursor-pointer">
+                                                <i className="fas fa-keyboard text-[30px]"></i>
+                                            </li>
+                                            <li className="text-[#f8f8f2] mt-2 hover:text-[#ff5555] cursor-pointer">
+                                                <i className="fas fa-headset text-[30px]"></i>
+                                            </li>
+                                            <li className="text-[#f8f8f2] my-2 hover:text-[#ff5555] cursor-pointer">
+                                                <i className="fas fa-hdd text-[30px]"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     </div>
                     ) : (null)}
