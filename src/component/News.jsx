@@ -32,21 +32,21 @@ export default function News() {
                         <img src="./slide3.jpeg" alt="" className='w-full h-[250px] rounded-[20px]'/>
                     </div>
                     <div className="flex mt-[-30px] justify-center text-center w-full">
-                        <button
-                        onClick={() => handlePageChange(1)}
-                        disabled={currentPage === 1}
-                        className="p-2 ms-1 bg-gray-300 hover:bg-slate-50 rounded-[50%] transition-all"
-                        ></button>
-                        <button
-                        onClick={() => handlePageChange(2)}
-                        disabled={currentPage === 2}
-                        className="p-2 ms-1 bg-gray-300 hover:bg-slate-50 rounded-[50%] transition-all"
-                        ></button>
-                        <button
-                        onClick={() => handlePageChange(3)}
-                        disabled={currentPage === 3}
-                        className="p-2 ms-1 bg-gray-300 hover:bg-slate-50 rounded-[50%] transition-all"
-                        ></button>
+                    <button
+                    onClick={() => handlePageChange(1)}
+                    disabled={currentPage === 1}
+                    className={`p-2 ms-1 ${currentPage === 1 ? 'bg-white' : 'bg-gray-300'} hover:bg-slate-50 rounded-[50%] transition-all`}
+                    ></button>
+                    <button
+                    onClick={() => handlePageChange(2)}
+                    disabled={currentPage === 2}
+                    className={`p-2 ms-1 ${currentPage === 2 ? 'bg-white' : 'bg-gray-300'} hover:bg-slate-50 rounded-[50%] transition-all`}
+                    ></button>
+                    <button
+                    onClick={() => handlePageChange(3)}
+                    disabled={currentPage === 3}
+                    className={`p-2 ms-1 ${currentPage === 3 ? 'bg-white' : 'bg-gray-300'} hover:bg-slate-50 rounded-[50%] transition-all`}
+                    ></button>
                     </div>
                 </div>
             </div>

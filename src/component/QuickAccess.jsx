@@ -12,16 +12,16 @@ export default function QuickAccess() {
                         <i className="fas fa-chevron-left text-[20px] text-[#ff5555]"></i>
                     </button>
                     <div className="flex flex-row justify-center items-center">
-                        <div className="bg-[#ff5555] h-[100px] w-[100px] rounded-[20px] me-2 text-center hover:brightness-[95%] cursor-pointer">
+                        <div className="bg-[#ff5555] h-[100px] w-[100px] rounded-[20px] me-2 text-center hover:brightness-[90%] hover:scale-[101%] cursor-pointer">
                             <i className="fas fa-mouse text-[40px] text-[#f8f8f2] mt-[30px]"></i>
                         </div>
-                        <div className="bg-[#ff5555] h-[100px] w-[100px] rounded-[20px] me-2 text-center hover:brightness-[95%] cursor-pointer">
+                        <div className="bg-[#ff5555] h-[100px] w-[100px] rounded-[20px] me-2 text-center hover:brightness-[90%] hover:scale-[101%] cursor-pointer">
                             <i className="fas fa-keyboard text-[40px] text-[#f8f8f2] mt-[30px]"></i>
                         </div>
-                        <div className="bg-[#ff5555] h-[100px] w-[100px] rounded-[20px] me-2 text-center hover:brightness-[95%] cursor-pointer">
+                        <div className="bg-[#ff5555] h-[100px] w-[100px] rounded-[20px] me-2 text-center hover:brightness-[90%] hover:scale-[101%] cursor-pointer">
                             <i className="fas fa-headset text-[40px] text-[#f8f8f2] mt-[30px]"></i>
                         </div>
-                        <div className="bg-[#ff5555] h-[100px] w-[100px] rounded-[20px] text-center hover:brightness-[95%] cursor-pointer">
+                        <div className="bg-[#ff5555] h-[100px] w-[100px] rounded-[20px] text-center hover:brightness-[90%] hover:scale-[101%] cursor-pointer">
                             <i className="fas fa-hdd text-[40px] text-[#f8f8f2] mt-[30px]"></i>
                         </div>
                     </div>

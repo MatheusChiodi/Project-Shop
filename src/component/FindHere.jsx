@@ -5,7 +5,7 @@ export default function FindHere() {
                 <p className="text-[#f8f8f2] lg:text-[20px] md:text-[17px] text-[15px] font-bold">
                     Which one is closest to you?
                 </p>
-                <a href="#" className="text-[#f8f8f2] lg:text-[15px] md:[13.5px] text-[12px] bg-[#ff5555] px-3 ms-3 rounded-md text-center">
+                <a href="#" className="text-[#f8f8f2] lg:text-[15px] md:[13.5px] text-[12px] bg-[#ff5555] px-3 ms-3 rounded-md text-center hover:brightness-[95%] hover:scale-[101%]">
                     <span className="font-bold">Find</span> here
                 </a>
                 

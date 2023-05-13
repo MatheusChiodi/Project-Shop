@@ -2,7 +2,7 @@ export default function Portals() {
     return (
         <>
             <div className="w-full md:px-[10%] px-3 m-0 p-0 mt-[20px]">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                     <div className="bg-[#ff5555] h-[80px] lg:h-[70px] rounded-[10px] mt-3 flex justify-between items-center text-[#f8f8f2] itens">
                         <p className="ms-[20px] text-[#f8f8f2] leading-none">
                             <span className="font-bold">Portals</span> <br />Mouse
