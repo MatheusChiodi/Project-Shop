@@ -15,7 +15,7 @@ export default function News() {
                         <img src="./newKeyboard.png" alt="" className="w-full h-[250px] lg:h[350px]  rounded-[20px]" />
                     </div>
                 </div>
-                <Slide customClass="my-3 rounded-[20px]" customClassImg="w-full h-[350px]" customClassImgMobile="w-full h-[500px]"/>
+                <Slide customClass="my-3 rounded-[20px]" customClassImg="w-full h-[350px]" customClassImgMobile="w-full h-[500px] rounded-[20px]"/>
             </div>
         </>
     )
