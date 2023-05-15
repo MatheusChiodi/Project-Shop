@@ -5,8 +5,19 @@ import "slick-carousel/slick/slick-theme.css";
 import "./QuickAccess.css"
 
 
-export default class Responsive extends Component {
+export default class QuickAccess extends Component {
   render() {
+    const items = [
+        'fas fa-mouse', 
+        'fas fa-keyboard', 
+        'fas fa-headset',
+        'fas fa-headphones',
+        'fas fa-hdd',
+        'fas fa-memory',
+        'fas fa-desktop',
+        'fas fa-laptop'
+    ];
+
     var settings = {
         dots: true,
         infinite: true,
@@ -48,30 +59,11 @@ export default class Responsive extends Component {
                 <span className="font-bold">Quick</span> Access
             </p>
             <Slider {...settings} className="text-center">
-                <div className="button">
-                    <i className="fas fa-mouse text-[40px] text-[#f8f8f2] mt-[30px]"></i>
-                </div>
-                <div className="button">
-                    <i className="fas fa-keyboard text-[40px] text-[#f8f8f2] mt-[30px]"></i>
-                </div>
-                <div className="button">
-                    <i className="fas fa-headset text-[40px] text-[#f8f8f2] mt-[30px]"></i>
-                </div>
-                <div className="button">
-                    <i className="fas fa-headphones text-[40px] text-[#f8f8f2] mt-[30px]"></i>
-                </div>
-                <div className="button">
-                    <i className="fas fa-hdd text-[40px] text-[#f8f8f2] mt-[30px]"></i>
-                </div>
-                <div className="button">
-                    <i className="fas fa-memory text-[40px] text-[#f8f8f2] mt-[30px]"></i>
-                </div>
-                <div className="button">
-                    <i className="fas fa-desktop text-[40px] text-[#f8f8f2] mt-[30px]"></i>
-                </div>
-                <div className="button">
-                    <i className="fas fa-laptop text-[40px] text-[#f8f8f2] mt-[30px]"></i>
-                </div>
+                {items.map((item, index) => (
+                    <div className="button" key={index}>
+                        <i className={`${item} text-[40px] text-[#f8f8f2] mt-[30px]`}></i>
+                    </div>
+                ))}
             </Slider>
       </div>
     );

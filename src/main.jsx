@@ -14,8 +14,8 @@ import Footer from './template/Footer'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Header />
+    <Slide customClass="mt-[40px]" customClassImg="w-full h-[350px]" customClassImgMobile="w-full h-[650px]"/>
     <MoreSearch />
-    <Slide />
     <QuickAccess />
     <FindHere />
     <News />
