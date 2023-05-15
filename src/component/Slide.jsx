@@ -7,15 +7,6 @@ export default function Slide() {
         setCurrentPage(page);
     };
 
-    // quero que mude a imagem a cada 6 segundos
-    setInterval(() => {
-        if(currentPage === 3) {
-            setCurrentPage(1);
-        }else{
-            setCurrentPage(currentPage + 1);
-        }
-    }, 6000);
-
     return (
         <>  
         <div className="mt-0 md:mt-[40px] h-[350px]">
@@ -32,17 +23,17 @@ export default function Slide() {
                 <button
                 onClick={() => handlePageChange(1)}
                 disabled={currentPage === 1}
-                className={`p-2 ms-1 ${currentPage === 1 ? 'bg-white' : 'bg-gray-300'} hover:bg-slate-50 rounded-[50%] transition-all`}
+                className={`p-[7px] ms-1 ${currentPage === 1 ? 'bg-white' : 'bg-gray-300'} hover:bg-slate-50 rounded-[50%] transition-all`}
                 ></button>
                 <button
                 onClick={() => handlePageChange(2)}
                 disabled={currentPage === 2}
-                className={`p-2 ms-1 ${currentPage === 2 ? 'bg-white' : 'bg-gray-300'} hover:bg-slate-50 rounded-[50%] transition-all`}
+                className={`p-[7px] ms-1 ${currentPage === 2 ? 'bg-white' : 'bg-gray-300'} hover:bg-slate-50 rounded-[50%] transition-all`}
                 ></button>
                 <button
                 onClick={() => handlePageChange(3)}
                 disabled={currentPage === 3}
-                className={`p-2 ms-1 ${currentPage === 3 ? 'bg-white' : 'bg-gray-300'} hover:bg-slate-50 rounded-[50%] transition-all`}
+                className={`p-[7px] ms-1 ${currentPage === 3 ? 'bg-white' : 'bg-gray-300'} hover:bg-slate-50 rounded-[50%] transition-all`}
                 ></button>
             </div>
         </div>

@@ -1,0 +1,22 @@
+.button{
+    background-color: #ff5555;
+    height: 100px;
+    width: 100px !important;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover{
+  filter: brightness(90%);
+}
+
+.slick-prev:before, .slick-next:before{
+  color: #ff5555 !important;
+}
+
+.slick-dots{
+display: none !important;
+}

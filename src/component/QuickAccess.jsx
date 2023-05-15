@@ -1,37 +1,79 @@
-import './QuickAccess.css';
+import { Component } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./QuickAccess.css"
 
-export default function QuickAccess() {
+
+export default class Responsive extends Component {
+  render() {
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
     return (
-        <>
-            <div className="w-full px-[10%] bg-[#f8f8f2] h-[180px] mt-[20px]">
-                <p className="text-[30px] w-full text-center">
-                    <span className="font-bold">Quick</span> Access
-                </p>
-                <div className="flex h-[150px] mx-auto justify-center items-center">
-                    <button className="w-[50px] h-[50px] rounded-[50%] bg-[#f8f8f2] me-[20px] border-[2px] border-[#ff5555] hover:brightness-[95%]">
-                        <i className="fas fa-chevron-left text-[20px] text-[#ff5555]"></i>
-                    </button>
-                    <div className="flex flex-row justify-center items-center">
-                        <div className="bg-[#ff5555] h-[100px] w-[100px] rounded-[20px] me-2 text-center hover:brightness-[90%] hover:scale-[101%] cursor-pointer">
-                            <i className="fas fa-mouse text-[40px] text-[#f8f8f2] mt-[30px]"></i>
-                        </div>
-                        <div className="bg-[#ff5555] h-[100px] w-[100px] rounded-[20px] me-2 text-center hover:brightness-[90%] hover:scale-[101%] cursor-pointer">
-                            <i className="fas fa-keyboard text-[40px] text-[#f8f8f2] mt-[30px]"></i>
-                        </div>
-                        <div className="bg-[#ff5555] h-[100px] w-[100px] rounded-[20px] me-2 text-center hover:brightness-[90%] hover:scale-[101%] cursor-pointer">
-                            <i className="fas fa-headset text-[40px] text-[#f8f8f2] mt-[30px]"></i>
-                        </div>
-                        <div className="bg-[#ff5555] h-[100px] w-[100px] rounded-[20px] text-center hover:brightness-[90%] hover:scale-[101%] cursor-pointer">
-                            <i className="fas fa-hdd text-[40px] text-[#f8f8f2] mt-[30px]"></i>
-                        </div>
-                    </div>
-                    <button className="w-[50px] h-[50px] rounded-[50%] bg-[#f8f8f2] ms-[20px] border-[2px] border-[#ff5555] hover:brightness-[95%]">
-                        <i className="fas fa-chevron-right text-[20px] text-[#ff5555]"></i>
-                    </button>
+        <div className="w-full px-[25%] bg-[#f8f8f2] h-[180px] mt-[20px] mx-auto">
+            <p className="text-[30px] w-full text-center mb-5">
+                <span className="font-bold">Quick</span> Access
+            </p>
+            <Slider {...settings} className="text-center">
+                <div className="button">
+                    <i className="fas fa-mouse text-[40px] text-[#f8f8f2] mt-[30px]"></i>
                 </div>
-            </div>
-        </>
-    )
+                <div className="button">
+                    <i className="fas fa-keyboard text-[40px] text-[#f8f8f2] mt-[30px]"></i>
+                </div>
+                <div className="button">
+                    <i className="fas fa-headset text-[40px] text-[#f8f8f2] mt-[30px]"></i>
+                </div>
+                <div className="button">
+                    <i className="fas fa-headphones text-[40px] text-[#f8f8f2] mt-[30px]"></i>
+                </div>
+                <div className="button">
+                    <i className="fas fa-hdd text-[40px] text-[#f8f8f2] mt-[30px]"></i>
+                </div>
+                <div className="button">
+                    <i className="fas fa-memory text-[40px] text-[#f8f8f2] mt-[30px]"></i>
+                </div>
+                <div className="button">
+                    <i className="fas fa-desktop text-[40px] text-[#f8f8f2] mt-[30px]"></i>
+                </div>
+                <div className="button">
+                    <i className="fas fa-laptop text-[40px] text-[#f8f8f2] mt-[30px]"></i>
+                </div>
+            </Slider>
+      </div>
+    );
+  }
 }
-  
-  
