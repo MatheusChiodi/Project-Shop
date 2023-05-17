@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import Contact from './Contact';
 
-export default function Header() {
+const Header = () => {
     // se o tamanho da tela for maior que 1024 entao useState fica como true
     // se o tamanho da tela for menor que 1024 entao useState fica como false
     var status = false;
@@ -13,13 +14,6 @@ export default function Header() {
 
     function toggleMenu(){
         setIsOpen(!isOpen);
-    }
-
-
-    const [isOpenContact, setIsOpenContact] = useState(false);
-
-    function toggleMenuContact(){
-        setIsOpenContact(!isOpenContact);
     }
 
     // Departments
@@ -39,6 +33,15 @@ export default function Header() {
         // o botao cor outra cor quando clicado
         document.getElementById("dropdownTypes").classList.toggle("text-[#ff5555]");
     };
+
+    //Contact
+    const [isOpenContact, setIsOpenContact] = useState(false);
+    const [contactKey, setContactKey] = useState(Math.random());
+
+    function toggleMenuContact(){
+        setIsOpenContact(!isOpenContact);
+        setContactKey(Math.random()); // gera um novo valor aleatório para a key do componente
+    }
 
     return (
         <div className="m-0 p-0 fixed top-0 bg-[#f8f8f200] mx-auto" style={{ zIndex: 9999 }}>
@@ -61,7 +64,7 @@ export default function Header() {
                                 </p>
                             </div>
                             <div className="flex justify-center items-center md:pt-1 p-0 m-0 w-5/12">
-                                <label htmlFor="toggleContactModal" className="h-[25px] text-center inline-block px-4 py-1 leading-none border rounded-xl border-[#44475A] text-white text-[13px] bg-[#282a36] cursor-pointer">Contact</label>
+                                <label htmlFor="toggleContactModal" className="h-[25px] text-center inline-block px-4 py-1 leading-none border rounded-xl border-[#44475A] text-white text-[13px] bg-[#282a36] cursor-pointer hover:bg-[#ff5555] hover:border-[#ffffff] transition-colors">Contact</label>
                                 <input type="checkbox" name="toggleContactModal" id="toggleContactModal" checked={isOpenContact} onChange={toggleMenuContact}  className="hidden"/>
                             </div>
                         </div>
@@ -108,6 +111,7 @@ export default function Header() {
                                 <button
                                     id="dropdownTypes"
                                     onClick={toggleDropdownTypes}
+                                    className='hover:text-[#ff5555]'
                                 >
                                     Types
                                 </button> 
@@ -135,7 +139,11 @@ export default function Header() {
                     ) : (null)}
                 </nav>
             </header>
+
+            {isOpenContact && <Contact key={contactKey}/> }
         </div>
 
     )
 }
+
+export default Header
