@@ -48,8 +48,8 @@ const Header = () => {
             <header className="fixed top-0 w-full m-0 p-0 md:bg-[#282a36] bg-[#f8f8f200] text-[#f8f8f2] max-w-[2000px]">
                 <nav className="bg-[#282a36]  flex items-center justify-between flex-wrap  md:px-6 px-2 md:border-none border-b border-b-[#44475A] rounded-b-[20px] max-w-[2000px]">
                     <div className="block md:hidden w-[100%]">
-                        <div className="flex justify-between flex-row w-[100%] p-0 m-0">
-                            <div className="flex justify-center pt-1 p-0 m-0 w-5/12">
+                        <div className="flex justify-between flex-row w-[100%] p-0 m-0 items-center">
+                            <div className="flex justify-center pt-2 p-0 m-0 w-5/12">
                                 <label className="hamburger mt-[-10px] p-0">
                                     <input type="checkbox" checked={isOpen} onChange={toggleMenu} />
                                     <svg viewBox="0 0 32 32">
@@ -58,12 +58,12 @@ const Header = () => {
                                     </svg>
                                 </label>
                             </div>
-                            <div className="flex justify-cemter md:pt-1 p-0 m-0 w-2/12">
+                            <div className="flex justify-cemter w-2/12">
                                 <p className="h-[39px] mx-auto rounded-[80px] flex items-center justify-center text-center">
                                     <img src='logo.png' className="w-[40px] h-[40px] ml-2 md:mt-2" />
                                 </p>
                             </div>
-                            <div className="flex justify-center items-center md:pt-1 p-0 m-0 w-5/12">
+                            <div className="flex justify-center items-center p-0 m-0 w-5/12">
                                 <label htmlFor="toggleContactModal" className="h-[25px] text-center inline-block px-4 py-1 leading-none border rounded-xl border-[#44475A] text-white text-[13px] bg-[#282a36] cursor-pointer hover:bg-[#ff5555] hover:border-[#ffffff] transition-colors">Contact</label>
                                 <input type="checkbox" name="toggleContactModal" id="toggleContactModal" checked={isOpenContact} onChange={toggleMenuContact}  className="hidden"/>
                             </div>
