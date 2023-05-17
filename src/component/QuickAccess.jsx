@@ -54,7 +54,7 @@ export default class QuickAccess extends Component {
         ]
     };
     return (
-        <div className="w-full px-[25%] bg-[#f8f8f2] h-[180px] mt-[20px] mx-auto">
+        <div className="w-full px-[15%] sm:px-[25%] bg-[#f8f8f2] h-[180px] mt-[20px] mx-auto">
             <p className="text-[30px] w-full text-center mb-5">
                 <span className="font-bold">Quick</span> Access
             </p>
